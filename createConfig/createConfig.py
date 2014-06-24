@@ -18,9 +18,9 @@ def createConfig():
   # Monitor configuration
   config.add_section('Monitor')
   # Interval to find top section (seconds)
-  config.set('Monitor', 'monitorInterval', 5.0)
+  config.set('Monitor', 'monitorInterval', 10.0)
   # Window to be considered for traffic alerts (seconds)
-  config.set('Monitor', 'windowSize', 30.0)
+  config.set('Monitor', 'windowSize', 120.0)
   # Threshold for high traffic (requests per second) alert
   config.set('Monitor', 'threshold', 1.5)
   # Location of log files
